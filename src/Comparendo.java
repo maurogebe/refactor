@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class Comparendo {
 
-    private LimiteVehiculo[] limites;
+    private ArrayList<LimiteVehiculo> limites;
 
     public Comparendo() {
-        this.limites = new LimiteVehiculo[3];
-        this.limites[0] = new LimiteVehiculo("CARRO", 65, 66, 85);
-        this.limites[1] = new LimiteVehiculo("CAMION", 75, 76, 95);
-        this.limites[2] = new LimiteVehiculo("MULA", 95, 96, 110);
+        this.limites = new ArrayList<>();
+        this.limites.add(new LimiteVehiculo("CARRO", 65, 66, 85));
+        this.limites.add(new LimiteVehiculo("CAMION", 75, 76, 95));
+        this.limites.add(new LimiteVehiculo("MULA", 95, 96, 110));
     }
 
     public void construirFotoMulta(int velocidad, String tipoVehiculo) {
